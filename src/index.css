@@ -1,0 +1,95 @@
+/* /* Container for product list */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #f9f9f9;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    
+  }
+  
+  /* Individual card design */
+  .product-card {
+    width: 280px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-info {
+    padding: 15px;
+  }
+  
+  .product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .product-price {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .add-to-cart {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(to right, #3182ce, #409ff7);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .add-to-cart:hover {
+    background: linear-gradient(to right, #409ff7, #3182ce);
+  }
+  
+  .add-to-cart:active {
+    transform: scale(0.98);
+  }
+  header{
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .Linkcontent{
+    color: black;
+    font-weight: bold;
+    font-size:20px;
+  }
+  .Linkcontent:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+  }
